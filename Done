@@ -1,0 +1,43 @@
+// This program shows how to pass an entire array to a function and a "Function Returning Highest Element".
+#include <iostream>
+using namespace std;
+
+void showValues(int intArray[], int size); // Function prototype
+int highestofElements(int[], int);
+int collection(int size);
+
+int main()
+{
+	const int ARRAY_SIZE = 8;
+	int collection[ARRAY_SIZE] = {5, 10, 15, 20, 25, 30, 35, 40};
+	cout << "Eli John - CMPS 1063 - Assignmentt 1\n\n";
+	cout << "The array contains the values\n";
+	showValues(collection, ARRAY_SIZE);
+	highestofElements(collection, ARRAY_SIZE); // call highestofelements, getting numbers from the collection where they are stored in
+	return 0;
+ }
+
+/*************************************************************
+ *                         showValues                        *
+ * This function displays the contents of an integer array   *
+ * when passed the array's address and its size as arguments.*
+ *************************************************************/
+void showValues (int nums[], int size)
+{
+	for (int index = 0; index < size; index++)
+		cout << nums[index] << "  ";
+	cout << endl;
+}
+
+// Loop to store largest number to higesttoElements from the collection 
+int highestofElements(int num[], int size)
+{
+	int maximum =0; //setting max to 0 so i do not change the original in main
+	for (int i = 1; i < size; ++i)
+
+		if (maximum < num[i]) // to find the higest #1   1 2 5 6
+			maximum = num[i];
+	cout << "The highest number of this array is " << maximum << endl;
+	return maximum;
+}
+/* maximum will only store the number inside the variable without changing the original in this function or in main.This is why I created a new variable*/
