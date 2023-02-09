@@ -1,0 +1,22 @@
+Function Returning Highest Element
+Total points: 15
+1.	(2 points) Make a copy of Pr8-17.cpp and call it arrayFunctions.cpp. 
+2.	(5 points) Add a function with the following prototype:
+int highestofElements(int [], int)
+that will find and return the highest element of the array. Hint: You may consult slide 2 of Module 1-> CMPS1063_Lect04_1044_Review_Passing_Arrays_to_Functions.pptx.
+3.	(5 points) Call this function after the call to showValues(). The return of the function should be either saved in a variable or cout-ed.
+4.	(3 points) Print the highest element, as shown below.
+
+Your output should look like:
+
+Your Name - CMPS 1063 - Assignment 01
+
+The array contains the values
+5  10  15  20  25  30  35  40
+The highest element of the array is 40
+
+ 
+
+Additional grading criteria:
+Program does not compile: -10 points
+Documentation issues - variable names not meaningful, indentation not proper, function does not have comments on top, program file name still source.cpp: -2 points
